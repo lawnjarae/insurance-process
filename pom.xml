@@ -45,6 +45,11 @@
       <version>7.18.0.Final-redhat-00002</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.jbpm.contrib</groupId>
+      <artifactId>camel-workitem</artifactId>
+      <version>7.18.0.Final-redhat-00002</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
