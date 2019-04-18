@@ -66,5 +66,16 @@ public class Applicant implements java.io.Serializable {
 		this.amountRequested = amountRequested;
 		this.creditRating = creditRating;
 	}
+	
+	@Override
+    public String toString() {
+        return "Applicant{" +
+                "address='" + address + '\'' +
+                ", name='" + name + '\'' +
+                ", businessType='" + businessType + '\'' +
+                ", amountRequested=" + amountRequested +
+                ", creditRating=" + creditRating +
+                '}';
+    }
 
 }
