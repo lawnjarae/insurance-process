@@ -269,7 +269,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Invalid business type</valueString>
+        <valueString>Invalid business type. Valid options are: General Liability, Workmans Comp, Commercial Auto, Other</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
