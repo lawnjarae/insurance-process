@@ -4,6 +4,7 @@ import java.lang.Number;
 
 rule "RetractValidationError"
 	dialect "mvel"
+	ruleflow-group "retract-error"
 	when
 	then
 end
