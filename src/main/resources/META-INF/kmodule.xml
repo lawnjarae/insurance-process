@@ -2,5 +2,10 @@
   <kbase name="default-kie-base" default="true" eventProcessingMode="stream" equalsBehavior="identity">
     <ksession name="default-stateless-kie-session" type="stateless" default="false" clockType="realtime"/>
     <ksession name="default-stateful-kie-session" type="stateful" default="true" clockType="realtime"/>
+    <ksession name="debug-stateless-kie-session" type="stateless" default="false" clockType="realtime">
+      <listeners>
+        <ruleRuntimeEventListener type="org.kie.api.event.rule.DebugRuleRuntimeEventListener"/>
+      </listeners>
+    </ksession>
   </kbase>
 </kmodule>
