@@ -48,11 +48,11 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>149</width>
-          <header>Amount Requested &gt;</header>
+          <header>Amount Requested &lt;=</header>
           <constraintValueType>1</constraintValueType>
           <factField>amountRequested</factField>
           <fieldType>Double</fieldType>
-          <operator>&gt;</operator>
+          <operator>&lt;=</operator>
           <parameters/>
           <binding></binding>
         </condition-column52>
