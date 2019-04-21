@@ -12,7 +12,7 @@
   <attributeCols>
     <attribute-column52>
       <typedDefaultValue>
-        <valueString>validation</valueString>
+        <valueString>applicant-validation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
@@ -169,7 +169,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>validation</valueString>
+        <valueString>applicant-validation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -208,7 +208,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>validation</valueString>
+        <valueString>applicant-validation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -248,7 +248,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>validation</valueString>
+        <valueString>applicant-validation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
