@@ -5,6 +5,7 @@
     <ksession name="debug-stateless-kie-session" type="stateless" default="false" clockType="realtime">
       <listeners>
         <ruleRuntimeEventListener type="org.kie.api.event.rule.DebugRuleRuntimeEventListener"/>
+        <agendaEventListener type="org.drools.core.event.DebugAgendaEventListener"/>
       </listeners>
     </ksession>
   </kbase>
