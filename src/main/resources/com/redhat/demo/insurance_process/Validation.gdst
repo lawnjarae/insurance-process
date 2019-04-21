@@ -36,7 +36,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>name</factField>
           <fieldType>String</fieldType>
-          <operator>!= null</operator>
+          <operator>== null</operator>
           <parameters/>
           <binding></binding>
         </condition-column52>
