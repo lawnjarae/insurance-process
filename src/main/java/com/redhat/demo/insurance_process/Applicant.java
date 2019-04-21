@@ -14,6 +14,8 @@ public class Applicant implements java.io.Serializable {
 	private java.lang.Double amountRequested;
 	private java.lang.Integer creditRating;
 
+	private com.redhat.demo.insurance_process.ValidationErrorDO validationError;
+
 	public Applicant() {
 	}
 
@@ -57,25 +59,33 @@ public class Applicant implements java.io.Serializable {
 		this.creditRating = creditRating;
 	}
 
+	@Override
+	public String toString() {
+		return "Applicant{" + "address='" + address + '\'' + ", name='" + name
+				+ '\'' + ", businessType='" + businessType + '\''
+				+ ", amountRequested=" + amountRequested + ", creditRating="
+				+ creditRating + '}';
+	}
+
+	public com.redhat.demo.insurance_process.ValidationErrorDO getValidationError() {
+		return this.validationError;
+	}
+
+	public void setValidationError(
+			com.redhat.demo.insurance_process.ValidationErrorDO validationError) {
+		this.validationError = validationError;
+	}
+
 	public Applicant(java.lang.String address, java.lang.String name,
 			java.lang.String businessType, java.lang.Double amountRequested,
-			java.lang.Integer creditRating) {
+			java.lang.Integer creditRating,
+			com.redhat.demo.insurance_process.ValidationErrorDO validationError) {
 		this.address = address;
 		this.name = name;
 		this.businessType = businessType;
 		this.amountRequested = amountRequested;
 		this.creditRating = creditRating;
+		this.validationError = validationError;
 	}
-	
-	@Override
-    public String toString() {
-        return "Applicant{" +
-                "address='" + address + '\'' +
-                ", name='" + name + '\'' +
-                ", businessType='" + businessType + '\'' +
-                ", amountRequested=" + amountRequested +
-                ", creditRating=" + creditRating +
-                '}';
-    }
 
 }
