@@ -4,6 +4,19 @@ rule "Test1"
 	ruleflow-group "test-rules"
 	dialect "mvel"
 	when
+		applicant : Applicant( name == null )
+	then
+	    System.out.println("******************** Testing");
+		ValidationErrorDO fact0 = new ValidationErrorDO();
+		//fact0.setError( "Name is a mandatory field" );
+		//insert( fact0 );
+		//applicant.setValidationError( fact0 );
+end
+
+rule "Test2"
+	ruleflow-group "test-rules"
+	dialect "mvel"
+	when
 		applicant : Applicant()
 	then
 	    System.out.println("******************** Testing");
