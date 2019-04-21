@@ -1,0 +1,9 @@
+package com.redhat.demo.insurance_process;
+
+import java.lang.Number;
+
+rule "RetractValidationError"
+	dialect "mvel"
+	when
+	then
+end
