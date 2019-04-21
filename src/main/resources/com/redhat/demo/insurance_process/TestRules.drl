@@ -23,5 +23,5 @@ rule "Test2"
 		ValidationErrorDO fact0 = new ValidationErrorDO();
 		fact0.setError( "Name is a mandatory field" );
 		insert( fact0 );
-		//applicant.setValidationError( fact0 );
+		applicant.setValidationError( fact0 );
 end
