@@ -4,7 +4,7 @@ rule "Test1"
 	ruleflow-group "test-rules"
 	dialect "mvel"
 	when
-		applicant : Applicant( name == null )
+		applicant : Applicant()
 	then
 	    System.out.println("******************** Testing");
 		ValidationErrorDO fact0 = new ValidationErrorDO();
