@@ -26,4 +26,11 @@ public class ValidationErrorDO implements java.io.Serializable {
 		this.error = error;
 	}
 
+	@Override
+	public String toString() {
+		return "ValidationErrorDO [error=" + error + "]";
+	}
+	
+	
+
 }

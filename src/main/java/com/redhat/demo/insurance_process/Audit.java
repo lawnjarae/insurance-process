@@ -25,4 +25,10 @@ public class Audit implements java.io.Serializable {
 		this.firedRules = firedRules;
 	}
 
+	@Override
+	public String toString() {
+		return "Audit [firedRules=" + firedRules + "]";
+	}
+
+	
 }
