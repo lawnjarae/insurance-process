@@ -37,6 +37,6 @@
     <imports/>
   </imports>
   <ksessions>
-    <string>default-stateless-kie-session</string>
+    <string>default-stateful-kie-session</string>
   </ksessions>
 </scenario>
