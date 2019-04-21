@@ -22,9 +22,9 @@ public class ValidationErrorDO implements java.io.Serializable {
 		this.error = error;
 	}
 
-	public ValidationErrorDO(java.lang.String error) {
-		this.error = error;
-	}
+	//public ValidationErrorDO(java.lang.String error) {
+	//	this.error = error;
+	//}
 
 	@Override
 	public String toString() {
