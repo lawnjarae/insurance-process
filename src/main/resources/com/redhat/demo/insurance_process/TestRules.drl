@@ -1,6 +1,6 @@
 package com.redhat.demo.insurance_process;
 
-rule "Row 1 Validation"
+rule "Test1"
 	ruleflow-group "test-rules"
 	dialect "mvel"
 	when
