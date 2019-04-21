@@ -6,5 +6,9 @@ rule "RetractValidationError"
 	dialect "mvel"
 	ruleflow-group "retract-error"
 	when
+		vdo : ValidationErrorDO( )
+		applicant : Applicant( validationError != null )
 	then
+		retract( vdo );
+		applicant.setValidationError(null);
 end
