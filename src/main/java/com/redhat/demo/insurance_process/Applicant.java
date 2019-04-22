@@ -63,10 +63,9 @@ public class Applicant implements java.io.Serializable {
 
 	@Override
 	public String toString() {
-		return "Applicant [address=" + address + ", name=" + name
-				+ ", businessType=" + businessType + ", amountRequested="
-				+ amountRequested + ", creditRating=" + creditRating
-				+ ", validationError=" + validationError + "]";
+		return "Applicant [id=" + id + ", address=" + address + ", name=" + name + ", businessType=" + businessType
+				+ ", amountRequested=" + amountRequested + ", creditRating=" + creditRating + ", validationError="
+				+ validationError + "]";
 	}
 
 	public com.redhat.demo.insurance_process.ValidationErrorDO getValidationError() {

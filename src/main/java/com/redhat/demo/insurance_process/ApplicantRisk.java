@@ -37,4 +37,9 @@ public class ApplicantRisk implements java.io.Serializable {
 		this.risk = risk;
 	}
 
+	@Override
+	public String toString() {
+		return "ApplicantRisk [creditScore=" + creditScore + ", risk=" + risk + "]";
+	}
+
 }
