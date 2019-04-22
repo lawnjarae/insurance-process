@@ -12,7 +12,7 @@
     <dmn:informationRequirement id="_A56A8F99-B53E-4242-918B-E8806AE69FB2">
       <dmn:requiredInput href="#_41FF81EF-7BDF-4F23-BEFC-828596978F58"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_DF7ED4C6-5386-49F5-8B10-5799024C4C95" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_DF7ED4C6-5386-49F5-8B10-5799024C4C95" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_773486E2-6DB5-4DE1-BABF-F0222215CB2E">
         <dmn:inputExpression id="_B7DDCF2E-525D-4B6E-929B-B8A0C52FAAAB" typeRef="string">
           <dmn:text>Business Type</dmn:text>
@@ -104,6 +104,20 @@
           <dmn:text>(75..100)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_8F2D6B68-A4E1-4844-B1A6-DFCCEAFE01A5">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_32B6135F-D27E-48C4-91AE-AB1409AB2379">
+        <dmn:inputEntry id="_6070B7B0-2B21-4513-95CF-440BA75564B1">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_E626E8A5-C671-4559-B2CE-353CE4448BDC">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_CFD7E346-0C5C-434A-8D39-C6C55D262AE0">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_2FFEF4E0-A2EC-438B-83D5-83ABA3B7DF49">
           <dmn:text>true</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
