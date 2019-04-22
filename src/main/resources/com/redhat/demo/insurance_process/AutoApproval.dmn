@@ -72,7 +72,7 @@
           <dmn:text>&lt; 500000</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_EA1A02A6-C9F9-48E8-B8A6-E7E119821540">
-          <dmn:text>(50..75)</dmn:text>
+          <dmn:text>[50..75]</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_5A6117C5-DCD0-429C-9929-E598127998E4">
           <dmn:text>true</dmn:text>
@@ -88,7 +88,7 @@
           <dmn:text>[500000..1000000]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_A8FEA424-7137-49FA-A986-EAF6F6B09C92">
-          <dmn:text>(50..75)</dmn:text>
+          <dmn:text>[50..75]</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_9377F585-0116-410B-A09A-CCA13ACEDD29">
           <dmn:text>false</dmn:text>
@@ -104,7 +104,7 @@
           <dmn:text>[500000..1000000]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_7BFC40E9-3D76-4BFE-86D0-B2721464A901">
-          <dmn:text>(75..100)</dmn:text>
+          <dmn:text>[76..100]</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_8F2D6B68-A4E1-4844-B1A6-DFCCEAFE01A5">
           <dmn:text>true</dmn:text>
