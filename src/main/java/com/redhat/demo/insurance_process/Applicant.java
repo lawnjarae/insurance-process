@@ -77,12 +77,12 @@ public class Applicant implements java.io.Serializable {
 	}
 
 	public Applicant(
+	        java.lang.Integer id,
 			java.lang.String address,
 			java.lang.String name,
 			java.lang.String businessType,
 			java.lang.Double amountRequested,
-			com.redhat.demo.insurance_process.ValidationErrorDO validationError,
-			java.lang.Integer id) {
+			com.redhat.demo.insurance_process.ValidationErrorDO validationError) {
 		this.address = address;
 		this.name = name;
 		this.businessType = businessType;
