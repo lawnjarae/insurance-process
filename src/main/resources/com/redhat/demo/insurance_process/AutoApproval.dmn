@@ -32,7 +32,7 @@
       <dmn:rule id="_C9E3C9D5-9CFE-426F-BF9D-B2A78B476BD3">
         <dmn:description>Bad credit</dmn:description>
         <dmn:inputEntry id="_7A676DE6-A248-4779-AE54-83B9DBB36272">
-          <dmn:text></dmn:text>
+          <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_B76E84DF-27B2-44EA-9023-CD0BE6BD16C9">
           <dmn:text>-</dmn:text>
@@ -47,7 +47,7 @@
       <dmn:rule id="_A443B9D7-7B85-4870-870A-D1282350BA90">
         <dmn:description>Anything over a million</dmn:description>
         <dmn:inputEntry id="_68F09D1D-36A3-4AEB-9DED-36A825ADF728">
-          <dmn:text></dmn:text>
+          <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_67AD5563-41A9-44F1-9966-276140AE9C01">
           <dmn:text>&gt; 1000000</dmn:text>
@@ -59,18 +59,52 @@
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
+      <dmn:rule id="_BB182B27-BFED-4CA4-A2F0-1822430180FE">
+        <dmn:description>&lt; 500k GL and WC, Fair score</dmn:description>
+        <dmn:inputEntry id="_E090FB0F-5CD0-4985-A9A0-66E3423FBC74">
+          <dmn:text>General Liability,
+Workmens Comp</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_A47313E0-01A4-43E9-9B4F-5ABEB518CABB">
+          <dmn:text>&lt; 500000</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_EA1A02A6-C9F9-48E8-B8A6-E7E119821540">
+          <dmn:text>(50..75)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5A6117C5-DCD0-429C-9929-E598127998E4">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_9765C9E2-F45B-4E16-A469-7B8669C6FBAC">
+        <dmn:description>&lt; 500k GL and WC, Fair score</dmn:description>
+        <dmn:inputEntry id="_2BFEBD2D-07B6-477B-A812-304359ADBBC0">
+          <dmn:text>General Liability,
+Workmens Comp</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_7A8A59E5-98D2-4178-9618-F014316EB9E8">
+          <dmn:text>(500000..1000000)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_A8FEA424-7137-49FA-A986-EAF6F6B09C92">
+          <dmn:text>(50..75)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_9377F585-0116-410B-A09A-CCA13ACEDD29">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
       <dmn:rule id="_4953763F-4C5C-431E-A36E-9928F1189EC6">
+        <dmn:description>&lt; 500k GL and WC, Fair score</dmn:description>
         <dmn:inputEntry id="_1DFFAEB4-CC2E-4D55-98A6-5A7BE768707C">
-          <dmn:text></dmn:text>
+          <dmn:text>General Liability,
+Workmens Comp</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_0A98CF47-6BDF-4E47-B83E-CAF94F162369">
-          <dmn:text></dmn:text>
+          <dmn:text>(500000..1000000)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_7BFC40E9-3D76-4BFE-86D0-B2721464A901">
-          <dmn:text></dmn:text>
+          <dmn:text>(75..100)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_8F2D6B68-A4E1-4844-B1A6-DFCCEAFE01A5">
-          <dmn:text></dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
@@ -90,7 +124,7 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_DF7ED4C6-5386-49F5-8B10-5799024C4C95">
             <kie:width>50.0</kie:width>
-            <kie:width>100.0</kie:width>
+            <kie:width>194.0</kie:width>
             <kie:width>141.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
