@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://github.com/kiegroup/drools/kie-dmn/_4008FA63-AC54-4968-BCA5-6EEA4144F8EF" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_AE26C48F-869D-4769-AF68-AA86D447D5FB" name="AutoApproval" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://github.com/kiegroup/drools/kie-dmn/_4008FA63-AC54-4968-BCA5-6EEA4144F8EF">
   <dmn:extensionElements/>
+  <dmn:inputData id="_41FF81EF-7BDF-4F23-BEFC-828596978F58" name="Amount Requested">
+    <dmn:variable id="_3B32A4AE-2035-44A3-9A47-F5C077BB4B19" name="Amount Requested" typeRef="number"/>
+  </dmn:inputData>
   <dmn:decision id="_A1E8CEBF-2078-46B0-BB68-F786E17280CA" name="Auto Approval">
     <dmn:variable id="_2E443265-DBEC-4C42-A74C-57CC99F4A77E" name="Auto Approval" typeRef="boolean"/>
     <dmn:informationRequirement id="_740C4D0B-6A8A-4EE0-AF07-A3A21B5B68D1">
@@ -82,7 +85,7 @@
 "Workmens Comp"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_7A8A59E5-98D2-4178-9618-F014316EB9E8">
-          <dmn:text>(500000..1000000)</dmn:text>
+          <dmn:text>[500000..1000000]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_A8FEA424-7137-49FA-A986-EAF6F6B09C92">
           <dmn:text>(50..75)</dmn:text>
@@ -98,7 +101,7 @@
 "Workmens Comp"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_0A98CF47-6BDF-4E47-B83E-CAF94F162369">
-          <dmn:text>(500000..1000000)</dmn:text>
+          <dmn:text>[500000..1000000]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_7BFC40E9-3D76-4BFE-86D0-B2721464A901">
           <dmn:text>(75..100)</dmn:text>
@@ -123,9 +126,6 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
-  <dmn:inputData id="_41FF81EF-7BDF-4F23-BEFC-828596978F58" name="Amount Requested">
-    <dmn:variable id="_3B32A4AE-2035-44A3-9A47-F5C077BB4B19" name="Amount Requested" typeRef="number"/>
-  </dmn:inputData>
   <dmn:inputData id="_0D10F16D-01AC-4E57-8F02-53BEE72C675D" name="Business Type">
     <dmn:variable id="_EE5D06BE-1ED2-4581-ADFC-375374CE3844" name="Business Type" typeRef="string"/>
   </dmn:inputData>
@@ -146,15 +146,6 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-_A1E8CEBF-2078-46B0-BB68-F786E17280CA" dmnElementRef="_A1E8CEBF-2078-46B0-BB68-F786E17280CA" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="290" y="85" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_41FF81EF-7BDF-4F23-BEFC-828596978F58" dmnElementRef="_41FF81EF-7BDF-4F23-BEFC-828596978F58" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -162,6 +153,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="422" y="204" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_A1E8CEBF-2078-46B0-BB68-F786E17280CA" dmnElementRef="_A1E8CEBF-2078-46B0-BB68-F786E17280CA" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="290" y="85" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_0D10F16D-01AC-4E57-8F02-53BEE72C675D" dmnElementRef="_0D10F16D-01AC-4E57-8F02-53BEE72C675D" isCollapsed="false">
