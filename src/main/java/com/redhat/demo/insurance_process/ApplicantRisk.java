@@ -6,12 +6,35 @@ package com.redhat.demo.insurance_process;
 
 public class ApplicantRisk implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ApplicantRisk() {
-    }
+	@org.kie.api.definition.type.Label(value = "Credit Score")
+	private java.lang.Integer creditScore;
+	@org.kie.api.definition.type.Label(value = "Risk")
+	private java.lang.String risk;
 
+	public ApplicantRisk() {
+	}
 
+	public java.lang.Integer getCreditScore() {
+		return this.creditScore;
+	}
 
+	public void setCreditScore(java.lang.Integer creditScore) {
+		this.creditScore = creditScore;
+	}
+
+	public java.lang.String getRisk() {
+		return this.risk;
+	}
+
+	public void setRisk(java.lang.String risk) {
+		this.risk = risk;
+	}
+
+	public ApplicantRisk(java.lang.Integer creditScore, java.lang.String risk) {
+		this.creditScore = creditScore;
+		this.risk = risk;
+	}
 
 }
