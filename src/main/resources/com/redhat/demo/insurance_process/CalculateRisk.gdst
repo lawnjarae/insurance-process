@@ -120,6 +120,20 @@
           <parameters/>
           <binding></binding>
         </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString>null</valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Empty Risk</header>
+          <constraintValueType>5</constraintValueType>
+          <factField>risk == $param</factField>
+          <operator>--- please choose ---</operator>
+          <parameters/>
+        </condition-column52>
       </conditions>
       <window>
         <parameters/>
@@ -141,7 +155,7 @@
       <factField>risk</factField>
       <type>String</type>
       <valueList>High, Medium, Low</valueList>
-      <update>false</update>
+      <update>true</update>
     </set-field-col52>
   </actionCols>
   <auditLog>
@@ -219,6 +233,11 @@
       <value>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>null</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
