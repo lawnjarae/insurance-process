@@ -1,9 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://github.com/kiegroup/drools/kie-dmn/_4008FA63-AC54-4968-BCA5-6EEA4144F8EF" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_AE26C48F-869D-4769-AF68-AA86D447D5FB" name="AutoApproval" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://github.com/kiegroup/drools/kie-dmn/_4008FA63-AC54-4968-BCA5-6EEA4144F8EF">
   <dmn:extensionElements/>
-  <dmn:inputData id="_41FF81EF-7BDF-4F23-BEFC-828596978F58" name="Amount Requested">
-    <dmn:variable id="_3B32A4AE-2035-44A3-9A47-F5C077BB4B19" name="Amount Requested" typeRef="number"/>
-  </dmn:inputData>
   <dmn:decision id="_A1E8CEBF-2078-46B0-BB68-F786E17280CA" name="Auto Approval">
     <dmn:variable id="_2E443265-DBEC-4C42-A74C-57CC99F4A77E" name="Auto Approval" typeRef="boolean"/>
     <dmn:informationRequirement id="_740C4D0B-6A8A-4EE0-AF07-A3A21B5B68D1">
@@ -16,6 +13,11 @@
       <dmn:requiredInput href="#_41FF81EF-7BDF-4F23-BEFC-828596978F58"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="_DF7ED4C6-5386-49F5-8B10-5799024C4C95" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_773486E2-6DB5-4DE1-BABF-F0222215CB2E">
+        <dmn:inputExpression id="_B7DDCF2E-525D-4B6E-929B-B8A0C52FAAAB" typeRef="string">
+          <dmn:text>Business Type</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:input id="_B701E481-8315-4468-A850-713A4711E509">
         <dmn:inputExpression id="_A5125D01-9513-4378-925D-5B1AEE1A06E7" typeRef="number">
           <dmn:text>Amount Requested</dmn:text>
@@ -29,6 +31,9 @@
       <dmn:output id="_0AD6DCF3-A127-45C0-8A3F-98C01AA31214" typeRef="boolean"/>
       <dmn:rule id="_C9E3C9D5-9CFE-426F-BF9D-B2A78B476BD3">
         <dmn:description>Bad credit</dmn:description>
+        <dmn:inputEntry id="_7A676DE6-A248-4779-AE54-83B9DBB36272">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_B76E84DF-27B2-44EA-9023-CD0BE6BD16C9">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
@@ -41,6 +46,9 @@
       </dmn:rule>
       <dmn:rule id="_A443B9D7-7B85-4870-870A-D1282350BA90">
         <dmn:description>Anything over a million</dmn:description>
+        <dmn:inputEntry id="_68F09D1D-36A3-4AEB-9DED-36A825ADF728">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_67AD5563-41A9-44F1-9966-276140AE9C01">
           <dmn:text>&gt; 1000000</dmn:text>
         </dmn:inputEntry>
@@ -52,6 +60,9 @@
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_4953763F-4C5C-431E-A36E-9928F1189EC6">
+        <dmn:inputEntry id="_1DFFAEB4-CC2E-4D55-98A6-5A7BE768707C">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_0A98CF47-6BDF-4E47-B83E-CAF94F162369">
           <dmn:text></dmn:text>
         </dmn:inputEntry>
@@ -64,8 +75,11 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
+  <dmn:inputData id="_41FF81EF-7BDF-4F23-BEFC-828596978F58" name="Amount Requested">
+    <dmn:variable id="_3B32A4AE-2035-44A3-9A47-F5C077BB4B19" name="Amount Requested" typeRef="number"/>
+  </dmn:inputData>
   <dmn:inputData id="_0D10F16D-01AC-4E57-8F02-53BEE72C675D" name="Business Type">
-    <dmn:variable id="_EE5D06BE-1ED2-4581-ADFC-375374CE3844" name="Business Type"/>
+    <dmn:variable id="_EE5D06BE-1ED2-4581-ADFC-375374CE3844" name="Business Type" typeRef="string"/>
   </dmn:inputData>
   <dmn:inputData id="_D5D03AA8-1473-4616-8AD5-62FF02930224" name="Credit Score">
     <dmn:variable id="_D5CADD03-874B-4FA3-97D6-9A7F327DB6F3" name="Credit Score" typeRef="number"/>
@@ -76,6 +90,7 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_DF7ED4C6-5386-49F5-8B10-5799024C4C95">
             <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
             <kie:width>141.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
@@ -83,15 +98,6 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-_41FF81EF-7BDF-4F23-BEFC-828596978F58" dmnElementRef="_41FF81EF-7BDF-4F23-BEFC-828596978F58" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="422" y="204" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_A1E8CEBF-2078-46B0-BB68-F786E17280CA" dmnElementRef="_A1E8CEBF-2078-46B0-BB68-F786E17280CA" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -101,13 +107,13 @@
         <dc:Bounds x="290" y="85" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_D5D03AA8-1473-4616-8AD5-62FF02930224" dmnElementRef="_D5D03AA8-1473-4616-8AD5-62FF02930224" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_41FF81EF-7BDF-4F23-BEFC-828596978F58" dmnElementRef="_41FF81EF-7BDF-4F23-BEFC-828596978F58" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="182" y="204" width="100" height="50"/>
+        <dc:Bounds x="422" y="204" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_0D10F16D-01AC-4E57-8F02-53BEE72C675D" dmnElementRef="_0D10F16D-01AC-4E57-8F02-53BEE72C675D" isCollapsed="false">
@@ -117,6 +123,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="302.29906542056074" y="204" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_D5D03AA8-1473-4616-8AD5-62FF02930224" dmnElementRef="_D5D03AA8-1473-4616-8AD5-62FF02930224" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="182" y="204" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_740C4D0B-6A8A-4EE0-AF07-A3A21B5B68D1" dmnElementRef="_740C4D0B-6A8A-4EE0-AF07-A3A21B5B68D1">
