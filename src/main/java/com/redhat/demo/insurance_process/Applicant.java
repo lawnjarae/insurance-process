@@ -16,6 +16,8 @@ public class Applicant implements java.io.Serializable {
 
 	private com.redhat.demo.insurance_process.ValidationErrorDO validationError;
 
+	private java.lang.Integer id;
+
 	public Applicant() {
 	}
 
@@ -61,9 +63,10 @@ public class Applicant implements java.io.Serializable {
 
 	@Override
 	public String toString() {
-		return "Applicant [address=" + address + ", name=" + name + ", businessType=" + businessType
-				+ ", amountRequested=" + amountRequested + ", creditRating=" + creditRating + ", validationError="
-				+ validationError + "]";
+		return "Applicant [address=" + address + ", name=" + name
+				+ ", businessType=" + businessType + ", amountRequested="
+				+ amountRequested + ", creditRating=" + creditRating
+				+ ", validationError=" + validationError + "]";
 	}
 
 	public com.redhat.demo.insurance_process.ValidationErrorDO getValidationError() {
@@ -75,16 +78,29 @@ public class Applicant implements java.io.Serializable {
 		this.validationError = validationError;
 	}
 
-	public Applicant(java.lang.String address, java.lang.String name,
-			java.lang.String businessType, java.lang.Double amountRequested,
+	public java.lang.Integer getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Integer id) {
+		this.id = id;
+	}
+
+	public Applicant(
+			java.lang.String address,
+			java.lang.String name,
+			java.lang.String businessType,
+			java.lang.Double amountRequested,
 			java.lang.Integer creditRating,
-			com.redhat.demo.insurance_process.ValidationErrorDO validationError) {
+			com.redhat.demo.insurance_process.ValidationErrorDO validationError,
+			java.lang.Integer id) {
 		this.address = address;
 		this.name = name;
 		this.businessType = businessType;
 		this.amountRequested = amountRequested;
 		this.creditRating = creditRating;
 		this.validationError = validationError;
+		this.id = id;
 	}
 
 }
