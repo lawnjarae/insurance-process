@@ -90,6 +90,20 @@
       <conditions>
         <condition-column52>
           <typedDefaultValue>
+            <valueString>true</valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>AR Object</header>
+          <constraintValueType>5</constraintValueType>
+          <factField>true == $param</factField>
+          <operator>--- please choose ---</operator>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
             <valueString></valueString>
             <dataType>NUMERIC_INTEGER</dataType>
             <isOtherwise>false</isOtherwise>
@@ -209,6 +223,11 @@
       <value>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
