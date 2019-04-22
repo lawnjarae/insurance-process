@@ -264,12 +264,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>General Liability, Workmans Comp, Commercial Auto, Other</valueString>
+        <valueString>General Liability, Workmens Comp, Commercial Auto, Other</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Invalid business type. Valid options are: General Liability, Workmans Comp, Commercial Auto, Other</valueString>
+        <valueString>Invalid business type. Valid options are: General Liability, Workmens Comp, Commercial Auto, Other</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
