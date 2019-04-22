@@ -8,13 +8,13 @@ public class Applicant implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	private java.lang.Integer id;
 	private java.lang.String address = null;
 	private java.lang.String name = null;
 	private java.lang.String businessType = null;
 	private java.lang.Double amountRequested = null;
 	private com.redhat.demo.insurance_process.ValidationErrorDO validationError;
 
-	private java.lang.Integer id;
 
 	public Applicant() {
 	}
