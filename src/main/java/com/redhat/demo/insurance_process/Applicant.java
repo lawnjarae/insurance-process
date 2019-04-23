@@ -15,6 +15,8 @@ public class Applicant implements java.io.Serializable {
 	private java.lang.Double amountRequested = null;
 	private com.redhat.demo.insurance_process.ValidationErrorDO validationError;
 
+	@org.kie.api.definition.type.Label(value = "Quote")
+	private java.lang.Integer quote;
 
 	public Applicant() {
 	}
@@ -55,8 +57,8 @@ public class Applicant implements java.io.Serializable {
 	public String toString() {
 		return "Applicant [id=" + id + ", address=" + address + ", name="
 				+ name + ", businessType=" + businessType
-				+ ", amountRequested=" + amountRequested + ", validationError=" + 
-				validationError + "]";
+				+ ", amountRequested=" + amountRequested + ", validationError="
+				+ validationError + "]";
 	}
 
 	public com.redhat.demo.insurance_process.ValidationErrorDO getValidationError() {
@@ -76,11 +78,8 @@ public class Applicant implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public Applicant(
-	        java.lang.Integer id,
-			java.lang.String address,
-			java.lang.String name,
-			java.lang.String businessType,
+	public Applicant(java.lang.Integer id, java.lang.String address,
+			java.lang.String name, java.lang.String businessType,
 			java.lang.Double amountRequested,
 			com.redhat.demo.insurance_process.ValidationErrorDO validationError) {
 		this.address = address;
@@ -89,6 +88,31 @@ public class Applicant implements java.io.Serializable {
 		this.amountRequested = amountRequested;
 		this.validationError = validationError;
 		this.id = id;
+	}
+
+	public java.lang.Integer getQuote() {
+		return this.quote;
+	}
+
+	public void setQuote(java.lang.Integer quote) {
+		this.quote = quote;
+	}
+
+	public Applicant(
+			java.lang.Integer id,
+			java.lang.String address,
+			java.lang.String name,
+			java.lang.String businessType,
+			java.lang.Double amountRequested,
+			com.redhat.demo.insurance_process.ValidationErrorDO validationError,
+			java.lang.Integer quote) {
+		this.id = id;
+		this.address = address;
+		this.name = name;
+		this.businessType = businessType;
+		this.amountRequested = amountRequested;
+		this.validationError = validationError;
+		this.quote = quote;
 	}
 
 }
