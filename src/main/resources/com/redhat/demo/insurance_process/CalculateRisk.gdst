@@ -12,7 +12,7 @@
   <attributeCols>
     <attribute-column52>
       <typedDefaultValue>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
