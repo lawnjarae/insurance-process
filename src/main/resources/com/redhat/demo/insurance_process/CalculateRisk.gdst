@@ -205,7 +205,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -259,7 +259,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -314,7 +314,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -370,7 +370,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -426,7 +426,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -483,7 +483,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -540,7 +540,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -596,7 +596,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -653,7 +653,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -709,7 +709,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculate-risk</valueString>
+        <valueString>calculate-applicant-risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
