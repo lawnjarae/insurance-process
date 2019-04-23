@@ -8,7 +8,7 @@ public class Audit implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<java.lang.String> firedRules;
+	private java.util.List<java.lang.String> firedRules = new ArrayList<String>();
 
 	public Audit() {
 	}
