@@ -152,13 +152,13 @@
       <header>Audit Entry</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>audit.getFiredRules().add(@{auditEntry});</text>
+          <text>audit.getFiredRules().add(&quot;@{auditEntry}&quot;);</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>204</width>
+          <width>100</width>
           <header>Audit Entry</header>
           <varName>auditEntry</varName>
           <fieldType>Object</fieldType>
